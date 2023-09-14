@@ -1,15 +1,333 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>C-Varela</title>
-  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Personal portfolio Website</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <!-- custom css link -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
 </head>
+<body id="top" class="dark_theme">
+<!-- HEADER -->
+  <header class="header" data-header>
+    <div class="container">
+      <h1 class="h1 logo">
+        <a href="#">Cristian<br>Varela<span>.</span></a>
+      </h1>
+      <div class="navbar-actions">
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+      </div>
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li>
+            <a href="#home" class="navbar-link">Inicio.</a>
+          </li>
+          <li>
+            <a href="#about" class="navbar-link">Sobre mi.</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="navbar-link">Portfolio.</a>
+          </li>
+          <li>
+            <a href="#contact" class="navbar-link">Contacto.</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<!-- main -->
+  <main>
+    <article class="container">
+<!-- #HERO -->
+      <section class="hero" id="home">
+        <figure class="hero-banner">
+          <picture>
+            <source srcset="./assets/images/hero-banner.png" media="(min-width: 768px)">
+            <source srcset="./assets/images/hero-banner-md.png" media="(min-width: 500px)">
+            <img src="./assets/images/hero-banner-sm.png" alt="."
+              class="w-100">
+          </picture>
+        </figure>
+        <div class="hero-content">
+          <h2 class="h2 hero-title">Diseño y construccion de productos creativos</h2>
+          <a href="#contact" class="btn btn-primary">Ponerse en contacto</a>
+        </div>
+        <ul class="hero-social-list">
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+              <div class="tooltip">Facebook</div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+              <div class="tooltip">Twitter</div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+              <div class="tooltip">Linkedin</div>
+            </a>
+          </li>
+        </ul>
+        <a href="#stats" class="scroll-down">Scroll</a>
+      </section>
+<!-- #Sobre mi -->
+      <section class="about" id="about">
+        <figure class="about-banner">
+          <img src="./assets/images/about-banner.png" alt="."
+            class="w-100">
+        </figure>
+        <div class="about-content section-content">
+          <p class="section-subtitle">Sobre mi</p>
+          <h2 class="h3 section-title">Gracias por llegar hasta aca!</h2>
+          <p class="section-text">
+            Soy Cristian Varela, residente de Buenos Aires, Argentina. Soy estudiante de diseño Front-end, pero mi verdadera motivación es afrontar desafíos y explorar otros lenguajes de programación. Mi experiencia profesional previa, abarcó diversas areas comerciales dentro de las cuales mis tareas eran la búsqueda de proveedores, reuniones estratégicas, facturación y conciliaciones bancarias, formandome como un profesional serio y enfocado en objetivos. Me gusta siempre demostrar mi creatividad y capacidad de autogestión en situaciones diversas. Mi naturaleza autodidacta me impulsa a aprender y adaptarme constantemente, mientras que mi meticulosidad garantiza que cada proyecto sea abordado con el más alto nivel de atención al detalle.
+          </p>
+          <div class="btn-group">
+            <button class="btn btn-primary">Download cv</button>
+          </div>
+        </div>
+      </section>
+<!-- #SKILLS -->
+      <section class="skills" id="skills">
+        <div class="skills-content section-content">
+          <p class="section-subtitle">Mis skills</p>
+          <h2 class="h3 section-title">¿Qué incluyen mis habilidades de programación?</h2>
+          <p class="section-text">
+Creo interfaces simples, intuitivas y responsivas que mejoran la experiencia del usuario. ¡Descubri cómo transformamos tus ideas en realidades digitales!
+          </p>
+          <div class="skills-toggle" data-toggle-box>
+            <button class="toggle-btn active" data-toggle-btn>Skills</button>
+            <button class="toggle-btn" data-toggle-btn>Herramientas</button>
+          </div>
+        </div>
+        <div class="skills-box" data-skills-box>
+          <ul class="skills-list">
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">HTML5</div>
+                <div class="card-icon">
+                  <img src="./assets/images/html5.png" alt="HTML5 logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">CSS3</div>
 
-<body>
-  <h1>hola mundo</h1>
+                <div class="card-icon">
+                  <img src="./assets/images/css3.png" alt="CSS3 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">JavaScript</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/javascript.png" alt="JavaScript logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">TypeScript</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/typescript.png" alt="TypeScript logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">jQuery</div>
+                <div class="card-icon">
+                  <img src="./assets/images/jquery.png" alt="jQuery logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Bootstrap</div>
+                <div class="card-icon">
+                  <img src="./assets/images/bootstrap.png" alt="Bootstrap logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Angular</div>
+                <div class="card-icon">
+                  <img src="./assets/images/angular.png" alt="Angular logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">React</div>
+                <div class="card-icon">
+                  <img src="./assets/images/react.png" alt="React logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Vue</div>
+                <div class="card-icon">
+                  <img src="./assets/images/vue.png" alt="Vue logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Firebase</div>
+                <div class="card-icon">
+                  <img src="./assets/images/firebase.png" alt="Firebase logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">PugJs</div>
+                <div class="card-icon">
+                  <img src="./assets/images/pugjs.png" alt="PugJs logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">SASS</div>
+                <div class="card-icon">
+                  <img src="./assets/images/sass.png" alt="SASS logo">
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="tools-list">
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Ajax</div>
+                <div class="card-icon">
+                  <img src="./assets/images/ajax.png" alt="Ajax logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Gulp</div>
+                <div class="card-icon">
+                  <img src="./assets/images/gulp.png" alt="Gulp logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Webpack</div>
+                <div class="card-icon">
+                  <img src="./assets/images/webpack.png" alt="Webpack logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Git</div>
+                <div class="card-icon">
+                  <img src="./assets/images/git.png" alt="Git logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Npm</div>
+                <div class="card-icon">
+                  <img src="./assets/images/npm.png" alt="Npm logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Command Line</div>
+                <div class="card-icon">
+                  <img src="./assets/images/command.png" alt="Command Line logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">VS Code</div>
+                <div class="card-icon">
+                  <img src="./assets/images/vs-code.png" alt="VS Code logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Trello</div>
+                <div class="card-icon">
+                  <img src="./assets/images/trello.png" alt="Trello logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">ClickUp</div>
+                <div class="card-icon">
+                  <img src="./assets/images/clickup.png" alt="ClickUp logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Slack</div>
+                <div class="card-icon">
+                  <img src="./assets/images/slack.png" alt="Slack logo">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </article>
+  </main>
+<!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">
+        &copy; 2023 <a href="#home">Cristian Varela</a>. All rights reserved
+      </p>
+    </div>
+  </footer>
+<!--  #GO TO TOP -->
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+<!-- custom js link -->
+  <script src="js/script.js"></script>
+<!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-
 </html>
