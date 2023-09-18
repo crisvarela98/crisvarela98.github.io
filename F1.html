@@ -191,6 +191,51 @@
     display: none;
   }
   </style>
+</head>
+<body>
+<div id="game">
+  <div id="sky"></div>
+  <div id="mountains">
+    <div class="mountain"></div>
+    <div class="mountain"></div>
+    <div class="mountain"></div>
+    <div class="mountain"></div>
+  </div>
+  <div id="terrain"></div>
+  <div id="fog" class="hidden"></div>
+  <canvas id="road"></canvas>
+  <div id="cars"></div>
+  <div id="car" class="player car"></div>
+  <div id="ui">
+    <div id="panel">
+      <div id="km"><a></a><a>0</a><a>0</a><a>0</a><a>0</a><a>0</a></div>
+      <div id="lap"><a>1</a></div>
+      <div id="position"><a>P</a><a>2</a><a>0</a><a>0</a></div>
+    </div>
+  </div>
+</div>
+<p>
+  <button id="left">◀️</button>
+  <button id="up">⏏️</button>
+  <button id="right">▶️</button>
+</p>
+<p><button id="click">¡Haz clic para comenzar!</button></p>
+<p>Flechas izquierda/derecha o A/D para conducir y<br>
+  Flecha arriba, W o Espacio para acelerar
+</p>
+
+<!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">
+        &copy; 2023 <a href="index.html">Cristian Varela</a>. All rights reserved
+      </p>
+    </div>
+  </footer>
+<!--  #GO TO TOP -->
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
 <script>
     //AUTOS
   var car = document.getElementById('car');
@@ -596,37 +641,5 @@
   //INIT
   game.init();
   </script>
-</head>
-<body>
-<div id="game">
-  <div id="sky"></div>
-  <div id="mountains">
-    <div class="mountain"></div>
-    <div class="mountain"></div>
-    <div class="mountain"></div>
-    <div class="mountain"></div>
-  </div>
-  <div id="terrain"></div>
-  <div id="fog" class="hidden"></div>
-  <canvas id="road"></canvas>
-  <div id="cars"></div>
-  <div id="car" class="player car"></div>
-  <div id="ui">
-    <div id="panel">
-      <div id="km"><a></a><a>0</a><a>0</a><a>0</a><a>0</a><a>0</a></div>
-      <div id="lap"><a>1</a></div>
-      <div id="position"><a>P</a><a>2</a><a>0</a><a>0</a></div>
-    </div>
-  </div>
-</div>
-<p>
-  <button id="left">◀️</button>
-  <button id="up">⏏️</button>
-  <button id="right">▶️</button>
-</p>
-<p><button id="click">¡Haz clic para comenzar!</button></p>
-<p>Flechas izquierda/derecha o A/D para conducir y<br>
-  Flecha arriba, W o Espacio para acelerar
-</p>
 </body>
 </html>
