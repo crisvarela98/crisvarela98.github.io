@@ -1,0 +1,66 @@
+    <li>
+      <a href="#" class="project-card">
+        <div class="card-content">
+          <h3 class="h4 card-title">Space Invaders</h3>
+        <figure class="card-banner">
+          <img src="images-proy/El texto del párrafo.png" class="w-100" alt="Space Invaders">
+        </figure>
+          <a href="space.html"><h3>muestra</h3></a>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="project-card">
+        <div class="card-content">
+          <h3 class="h4 card-title">Snake</h3>
+        <figure class="card-banner">
+          <img src="images-proy/El texto del párrafo.png" class="w-100" alt="Snake">
+        </figure>
+          <a href="/acceso/INDEXF1.html"><h3>Snake</h3></a>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="project-card">
+        <div class="card-content">
+          <h3 class="h4 card-title">PR </h3>
+          <figure class="card-banner">
+          <img src="images-proy/El texto del párrafo.png" class="w-100" alt="PR">
+          </figure>
+          <a href="#"><h3>muestra</h3></a>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="project-card">
+        <div class="card-content">
+          <h3 class="h4 card-title">PR</h3>
+        <figure class="card-banner">
+          <img src="images-proy/El texto del párrafo.png" class="w-100" alt="PR">
+        </figure>
+          <a href="#"><h3>muestra</h3></a>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="project-card">
+        <div class="card-content">
+          <h3 class="h4 card-title">PR</h3>
+        <figure class="card-banner">
+          <img src="images-proy/El texto del párrafo.png" class="w-100" alt="PR">
+        </figure>
+          <a href="#"><h3>muestra</h3></a>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="project-card">
+        <div class="card-content">
+          <h3 class="h4 card-title">PR</h3>
+        <figure class="card-banner">
+          <img src="images-proy/El texto del párrafo.png" class="w-100" alt="PR">
+        </figure>
+          <a href="#"><h3>muestra</h3></a>
+        </div>
+      </a>
+    </li>
