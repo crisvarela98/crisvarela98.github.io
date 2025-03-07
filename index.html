@@ -1,266 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--CSS Styles -->
-    <link rel="stylesheet" href="/style.css"/>
-    <!-- Favicons -->
-    <link rel="apple-touch-icon"sizes="180x180"href="/icons/c.png"
-    />
-    <link rel="icon"type="image/png"sizes="32x32"href="/icons/c.png"
-    />
-    <!-- Animate CSS CDN -->
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <title>Cristian Varela | Web Developer</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav>
-      <h1>CRISTIAN<br>VARELA</h1>
-      <ul class="navigation">
-        <li><a href="#about" class="nav-link">Sobre mi</a></li>
-        <li><a href="#skills" class="nav-link">Habilidades</a></li>
-        <li><a href="#projects" class="nav-link">Proyectos</a></li>
-        <li><a href="#contact" class="nav-link">Contacto</a></li>
-      </ul>
-      <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-        <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
-      </button>
-    </nav>
-    <!-- Hero Section -->
-    <section class="hero" id="about">
-      <img
-        src="/icons/c.png"
-        alt="Cristian Varela"
-        loading="lazy"
-        class="hero-img"
-      />
-      <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">Sobre mi</h2>
-        <p class="bio-text">
-          Me llamo Cristian Varela, soy estudiante de Front-end en Buenos Aires. Me enfrento a desafíos y exploración de lenguajes de programación. Poseo experiencia comercial variada, con enfoque en objetivos. Destaco por creatividad y autogestión en diversas situaciones. Mi naturaleza autodidacta me impulsa a aprender constantemente. Te invito a descubrir mis proyectos y ponerte en contacto conmigo.
-        </p>
-      </div>
-    </section>
-    <!-- More about -->
-    <section class="more-about">
-      <h2>Mas Sobre Mi</h2>
-      <p>
-        Ingresé a la programación motivado por la curiosidad de explorar un universo nuevo. La creación y comprensión de su funcionamiento son motores que influyen en mis objetivos personales, convirtiendo esta disciplina en una llave para la exploración y la innovación.
-      </p>
-      <p>
-        En mis primeros pasos, el desafío principal fue mantener la calma frente a obstáculos. La aceptación de que cada tropiezo es una oportunidad de aprendizaje resulta esencial. Como autodidacta, valoro la adaptabilidad y me sumerjo en diversas fuentes para nutrir constantemente mi conocimiento.
-      </p>
-      <p>
-        Entre mis proyectos destaca "CorrigeFrases", una aplicación que busca expresarse de manera política con una cuota de humor. Este proyecto refleja mi aplicación práctica de la programación.<br>Reconocer la importancia de la perseverancia ante desafíos ha sido una lección valiosa. Colaborar en la comunidad, ser padre y practicar deportes configuran mis expectativas de crecimiento personal y profesional.
-      </p>
-    </section>
-    <!-- Skills section -->
-    <section class="skills" id="skills">
-      <h2 class="skill-header">Mis Herramientas </h2>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Portafolio Web || Cristian Varela</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <style>
+  .social-icon-img {
+    width: 32px; /* Ajusta el tamaño */
+    height: 32px;
+    object-fit: contain; /* Mantiene la proporción */
+    transition: transform 0.3s ease;
+  }
 
-      <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
-          <img
-            src="/images-skills/angular.png"
-            alt="Angular"
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="/images-skills/bootstrap.png"
-            alt="bootstrap"
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="/images-skills/css3.png"
-            alt="css3"
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-        <div class="second-set animate__animated animate__pulse">
-          <img
-            src="/images-skills/firebase.png"
-            alt="firebase"
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="/images-skills/html5.png"
-            alt="HTML5"
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="/images-skills/javascript.png"
-            alt="javascript"
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-        <div class="thirt-set animate__animated animate__pulse">
-          <img
-            src="/images-skills/jquery.png"
-            alt="jquery"
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="/images-skills/pugjs.png"
-            alt="pugjs"
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="/images-skills/react.png"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-        <div class="four-set animate__animated animate__pulse">
-          <img
-            src="/images-skills/sass.png"
-            alt="SASS"
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="/images-skills/typescript.png"
-            alt="typescript"
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="/images-skills/vue.png"
-            alt="vuejs"
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-      </div>
-    </section>
-    <!-- Projects section -->
-    <section class="projects" id="projects">
-      <h2 class="projects-title">¡Mira mis obras!</h2>
-      <div class="projects-container">
-        <div class="project-container project-card">
-          <img src="/images/SistemaGestion.png" alt="SistemaGestion" loading="lazy" class="project-pic"/>
-          <h3 class="project-title">Facturas y Proveedores</h3>
-          <p class="project-details">
-            Registra, edita y filtra facturas. También registra y edita datos de proveedores.
-          </p>
-          <a href="https://replit.com/@cristianvarela1/Proyecto-final-global-3?v=1" target="_blank" class="project-link">Échale un vistazo</a>
-        </div>
-        <div class="project-container project-card">
-          <img src="/images/CorrigeFrases.png" alt="CorrigeFrases" loading="lazy" class="project-pic"/>
-          <h3 class="project-title">CorrigeFrases</h3>
-          <p class="project-details">
-            Permite mejorar la redacción y elevar la calidad del lenguaje utilizado en un texto. Con una interfaz sencilla
-          </p>
-          <a href="https://replit.com/@cristianvarela1/Sistema-de-Correccion-de-Frases?v=1" target="_blank" class="project-link">Échale un vistazo</a>
-        </div>
-        <div class="project-container project-card">
-          <img src="/images/Seguimiento de materiales.png" alt="Seguimiento de materiales" loading="lazy" class="project-pic"/>
-          <h3 class="project-title">Seguimiento de materiales(En proceso)</h3>
-          <p class="project-details">
-            Sistema para mantener un control de los materiales utilizados en una obra. 
-          </p>
-          <a href="https://replit.com/@cristianvarela1/seguimiento-de-materiales?v=1" target="_blank" class="project-link">Échale un vistazo</a>
-        </div>
-        <div class="project-container project-card">
-          <h3 class="project-title">Mas proyectos proximamente</h3>
-        </div>
-      </div>
-    </section>
-    <!-- Contact section -->
-    <section class="contact" id="contact">
-      <h2>Ponte en contacto conmigo</h2>
-      <div class="contact-form-container">
-        <div class="contact-form">
-          <form id="contactForm" action="https://formspree.io/f/xyylnggw" method="POST">
-            <div class="form-control">
-              <label for="name">Nombre</label>
-              <input
-                type="text"
-                id="name"
-                name="sender-name"
-                placeholder="Nombre y Apellido"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="sender-email"
-                placeholder="pepito@email.com"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="message">Mensaje</label>
-              <textarea
-                id="message"
-                cols="60"
-                rows="10"
-                placeholder="Escriba su mensaje..."
-                name="message"
-                class="input-field"
-                required
-              ></textarea>
-            </div>
-            <input
-              type="submit"
-              value="Enviar"
-              id="submit-btn"
-              class="submit-btn"
-            />
-          </form>
-        </div>
-      </div>
-    </section>
-    <!-- Social accounts - Fixed to the right -->
-    <div class="socials"> 
-      <a href="https://www.instagram.com/crisvarela__/" target="_blank"
-        ><img
-          src="/icons/icons8-instagram.gif"
-          alt="Instagram"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="www.linkedin.com/in/cristian-varela-824324246" target="_blank"
-        ><img
-          src="/icons/icons8-linkedin-circled.gif"
-          alt="Linkedin"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="https://github.com/crisvarela98" target="_blank"
-        ><img src="/icons/icons8-github.gif" alt="Github" class="socicon"
-      /></a>
+  .social-icon-img:hover {
+    transform: scale(1.2); /* Efecto al pasar el mouse */
+  }
+        </style>
+</head>
+<body>
+
+<body class="bg-gradient-to-t from-blue-950 to-blue-900  text-[#101232] flex justify-center items-center min-h-screen">
+  <h1 class="sr-only">Portafolio Web || Cristian Varela</h1>
+  <input type="checkbox" id="data" class="sr-only peer/data"  role="switch" aria-label="Data Toggle">
+  <input type="checkbox" id="content" class="sr-only peer/content"  role="switch" aria-label="Content Toggle">
+  <div class="z-10 rounded-xl overflow-hiddenS group relative
+        before:absolute
+        before:w-32
+        before:aspect-square
+        before:rounded-full
+        before:bg-blue-600
+        before:blur-lg 
+        before:right-3
+        before:top-0
+        before:-z-10
+
+        after:absolute
+        after:w-32
+        after:aspect-square
+        after:rounded-full
+        after:bg-teal-300
+        after:blur-lg 
+        after:left-4
+        after:bottom-0
+        after:-z-10
+
+        peer-checked/data:first:[&_#toggle-data>span]:scale-0
+        peer-checked/data:last:[&_#toggle-data>span]:scale-100
+
+        peer-checked/data:[&_#panel-data]:-translate-y-14
+        peer-checked/data:[&_#panel-social]:translate-y-12
+
+        peer-checked/content:[&_#panel-content]:opacity-100
+        peer-checked/content:[&_#panel-content]:pointer-events-auto
+       ">
+    <div class="relative bg-white rounded-xl bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-70 w-60 p-8 text-center">
+      <img src="https://media-eze1-1.cdn.whatsapp.net/v/t61.24694-24/427477537_2854252961403640_5218842878380737318_n.jpg?ccb=11-4&oh=01_Q5AaIMrBxCKHjIEOJKhbc3brs7uLQcwrIFskhJIyn0JUGUUU&oe=67D77153&_nc_sid=5e03e0&_nc_cat=100" class="rounded-full mx-auto w-20 h-20 border-4 border-white/70  opacity-70 group-hover:opacity-100  transition">
+
+      <h3 class="font-bold mt-6">Cristian Varela</h3>
+      <p class="flex items-center justify-center gap-1 text-sm">
+        <span class="material-symbols-outlined text-lg">location_on</span>
+        Buenos Aires, Argentina 
+      </p>
+
+      <label for="content" class="block mt-4 cursor-pointer  text-xs rounded-full p-2 px-3 bg-[#101232] text-white transition hover:shadow-xl hover:scale-110">Ver proyectos</label>
+
     </div>
-    <!-- Scroll to top -->
-    <i class="scroll-up" id="scroll-up"><img src="/icons/icons8-upward-arrow.gif"class="socicon up-arrow"alt="flecha"/></i>
-    <!-- Footer section -->
-    <footer>
-      <p class="copy">&copy; Copyright 2023</p>
-      <p class="copy">
-        By <a href="mailto:crisvarela98@gmail.com" target="_blank">Cristian Varela</a><br>crisvarela98@gmail.com</p>
-    </footer>
-    <!-- Website scripts -->
-    <script src="/js/app.js"></script>
-    <!-- Ion icons scripts -->
-    <script type="module"src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  </body>
+
+    <label id="toggle-data" for="data" class="grid [grid-template-areas:'stack'] place-content-center absolute top-4 right-4 cursor-pointer hover:scale-150 transition 
+            *:[grid-area:stack]
+            *:transition-all
+            *:duration-300
+            *:text-sm
+            last:*:scale-0
+        ">
+      <span class="material-symbols-outlined">=</span>
+      <span class="material-symbols-outlined">close</span>
+    </label>
+
+    <div id="panel-data" class="absolute -top-4 left-8 right-8 w-8/10 h-40  -z-20 bg-[#101232] rounded-t-md text-white p-6 pt-4 transition duration-300">
+      <p>Fullstack developer</p>
+    </div>
+
+    <div id="panel-social" class="absolute transition duration-300 -bottom-4 left-8 right-8 p-6 pb-2 w-8/10 h-20 -z-20 bg-[#101232] text-white rounded-b-md flex items-center justify-between gap-2">
+
+      <a href="https://www.linkedin.com/in/cristian-varela-824324246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+        <img class="social-icon-img" src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn">
+      </a>
+    
+      <a href="https://www.instagram.com/crisvarela__?igsh=MXdkZXU4ZWh0MGlseQ==" target="_blank">
+        <img class="social-icon-img" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+      </a>
+    
+      <a href="https://www.facebook.com/share/165Y9XqpZp/" target="_blank">
+        <img class="social-icon-img" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+      </a>
+    
+      <a href="https://github.com/crisvarela98" target="_blank">
+        <img class="social-icon-img" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+      </a>
+    
+    </div>
+
+    <div class="absolute bg-white inset-0 -z-20 rounded-xl"></div>
+
+    <div id="panel-content" class="absolute bg-white inset-0 opacity-0 pointer-events-none transition-all duration-500 rounded-xl p-8 space-y-4">
+      <h1 class="font-bold">Proyectos</h1>
+    <div id="panel-content-inner" class="overflow-y-auto max-h-[calc(100%-4rem)] pr-2">
+  <ul class="space-y-4">
+    <li>
+      <h2 class="font-bold">SGP (Python)</h2>
+      <p class="text-sm">Generacion y gestion de productos y clientes, control de stock, generador de pedidos (etapa de prueba).</p>
+      <a href="https://github.com/CrisVare123/SGP-ERP.git" target="_blank" class="text-blue-500 hover:underline text-sm">Ver código</a>
+       <li>
+      <h2 class="font-bold">SGP (NodeJs + MongoDB)</h2>
+      <p class="text-sm">Generacion y gestión de pedidos y clientes. sistema utilizado en Distribuidora de alimentos.</p>
+      <a href="https://github.com/crisvarela98/SGP-v2.git" target="_blank" class="text-blue-500 hover:underline text-sm">Ver código</a>
+    </li>
+    <li>
+      <h2 class="font-bold">Panel administrador de SGP (NodeJs + MongoDB)</h2>
+      <p class="text-sm">panel de control para gestionar productos, pedidos y clientes.(etapa de prueba).</p>
+      <a href="https://github.com/crisvarela98/admin-panel-mongo.git" target="_blank" class="text-blue-500 hover:underline text-sm">Ver código</a>
+    </li>
+    <li>
+      <h2 class="font-bold">Sistema de Gestión: Facturas de Proveedores (html,css y js)</h2>
+      <p class="text-sm">Permite registrar y contabilizar facturas.</p>
+      <a href="https://github.com/crisvarela98/Proyecto-final-global.git" target="_blank" class="text-blue-500 hover:underline text-sm">Ver código</a>
+    </li>
+  </ul> 
+    </div>
+    
+      
+
+      <label for="content" class="cursor-pointer absolute top-0 right-4  w-6 h-6 text-base text-gray-500 grid place-items-center material-symbols-outlined hover:scale-150  transition">X</label>
+    </div>
+
+  </div>
+</body>
+
+  
+</body>
 </html>
